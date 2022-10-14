@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="calculator">
-           <input type="text" id="inputValue" placeholder="0" name="result">
+           <input type="text" id="inputValue" placeholder="0"  onkeydown="return keyValidation(event.key)">
            <button onclick="cancelFun()">C</button>
            <button class="delButton" onclick="deleteFun()">DEL</button>
            <button  name="mod"    value="%" onclick="calculate(this.value)">%</button>
